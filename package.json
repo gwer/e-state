@@ -1,0 +1,27 @@
+{
+  "name": "e-state",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "devDependencies": {
+    "bem": "^2.0.0",
+    "bem-components": "^5.0.0",
+    "bem-core": "^4.1.1",
+    "ym": "^0.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwer/e-state.git"
+  },
+  "keywords": [
+    "bem"
+  ],
+  "author": "gwer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gwer/e-state/issues"
+  },
+  "homepage": "https://github.com/gwer/e-state#readme"
+}
