@@ -36,6 +36,7 @@ provide(BEM.declBlock(this.name, {}, {
 
     setState(stateName, pathStr, val) {
         let cur = this.states[stateName]
+        const old = this.getState(stateName, pathStr)
         const path = pathStr.split('.')
 
         while (path.length > 1) {
@@ -52,7 +53,7 @@ provide(BEM.declBlock(this.name, {}, {
 
         cur[path.shift()] = val
 
-        channels(stateName).emit('read', { path: pathStr, val })
+        channels(stateName).emit('read', { path: pathStr, val, old })
 
         function isObject(val) {
             return val === Object(val)
